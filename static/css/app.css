@@ -14,8 +14,16 @@ h1{
     width: 2em;
 }
 
-#img_cafe{
+.img_cafe{
     width: 100%;
     margin: 0 auto;
     display: block;
+}
+
+.form-control{
+    text-align: center
+}
+
+.btn{
+    margin: 0 1em;
 }

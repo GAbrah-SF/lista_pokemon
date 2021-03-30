@@ -4,6 +4,7 @@ from formularios import ver_formularios
 from lista_clientes import ver_clientes
 from lista_productos import ver_productos
 from lista_ventas import ver_ventas
+from lista_databases import mostrar_DataBase
 
 app = Flask(__name__)
 
@@ -34,6 +35,11 @@ def productos():
 @app.route('/Ventas')
 def ventas():
     return ver_ventas()
+
+
+@app.route('/DataBases')
+def DataBases():
+    return mostrar_DataBase()
 
 
 if __name__ == '__main__':

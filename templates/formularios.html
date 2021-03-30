@@ -3,4 +3,111 @@
 {% block content %}
     <br>
     <h1 class="title is-1 fw-bold has-text-black">{{ titulo2 }}</h1>
+    <br>
+    <div class="row g-3">
+        <div class="col-md-4 d-flex align-items-center" style="background: #aea9a9">
+            <form class="row g-3" action="" method="post" id="formCliente" style="margin: 0 10px" autocomplete="off">
+                <div class="col-md-12">
+                    <h4 class="title is-4 fw-bold has-text-black">Registrar nuevo Cliente:</h4>
+                </div>
+                <div class="col-md-12">
+                    <label for="nombre" class="form-label">Nombre del cliente:</label>
+                    <input type="text" class="form-control inputs1" id="nombre" name="nombre">
+                </div>
+                <div class="col-md-12">
+                    <label for="email" class="form-label">E-mail:</label>
+                    <input type="email" class="form-control inputs1" id="email" name="email">
+                </div>
+                <div class="col-md-12">
+                    <label for="fecha1" class="form-label">Fecha de Registro:</label>
+                    <input type="text" class="form-control" id="fecha1" name="fecha1" readonly>
+                </div>
+                <div style="text-align: center">
+                    <div class="btn-group">
+                        <button class="btn btn-danger" type="button" id="limpiar1">CANCELAR</button>
+                        <button class="btn btn-success" type="submit">GUARDAR</button>
+                    </div>
+                </div>
+                <br>
+            </form>
+        </div>
+
+        <div class="col-md-4 d-flex align-items-center"  style="background: #d0d0d0">
+            <form class="row g-3" action="" method="post" id="formProducto" style="margin: 0 10px" autocomplete="off">
+                <div class="col-md-12">
+                    <h4 class="title is-4 fw-bold has-text-black">Registrar nuevo Producto:</h4>
+                </div>
+                <div class="col-md-6">
+                    <label for="nom_producto" class="form-label">Nombre del Producto:</label>
+                    <input type="text" class="form-control inputs2" id="nom_producto" name="nom_producto">
+                </div>
+                <div class="col-md-6">
+                    <label for="precio" class="form-label">Precio $:</label>
+                    <input type="text" class="form-control inputs2" id="precio" name="precio">
+                </div>
+                <div class="col-md-12">
+                    <label for="descrip" class="form-label">Descripción:</label>
+                    <input type="text" class="form-control inputs2" id="descrip" name="descrip">
+                </div>
+                <div class="col-md-12">
+                    <label for="fecha2" class="form-label">Fecha de Registro:</label>
+                    <input type="text" class="form-control" id="fecha2" name="fecha2" readonly>
+                </div>
+                <div style="text-align: center">
+                    <div class="btn-group">
+                        <button class="btn btn-danger" type="button" id="limpiar2">CANCELAR</button>
+                        <button class="btn btn-success" type="submit">GUARDAR</button>
+                    </div>
+                </div>
+                <br>
+            </form>
+        </div>
+
+        <div class="col-md-4 d-flex align-items-center" style="background: #aea9a9">
+            <form class="row g-3" action="" method="post" id="formdeVentas" style="margin: 0 10px" autocomplete="off">
+                <div class="col-md-12">
+                    <h4 class="title is-4 fw-bold has-text-black">Realizar una Venta:</h4>
+                </div>
+                <div class="col-md-4">
+                    <label for="" class="form-label">CLIENTE:</label>
+                    <input type="text" class="form-control inputs3" id="" name="">
+                </div>
+                <div class="col-md-4">
+                    <label for="" class="form-label">PRODUCTO:</label>
+                    <input type="text" class="form-control inputs3" id="" name="">
+                </div>
+                <div class="col-md-4">
+                    <label for="" class="form-label">CANTIDAD:</label>
+                    <input type="text" class="form-control inputs3" id="" name="">
+                </div>
+                <div class="col-md-6">
+                    <label for="" class="form-label">PRECIO UNITARIO:</label>
+                    <input type="text" class="form-control inputs3" id="" name="">
+                </div>
+                <div class="col-md-6">
+                    <label for="" class="form-label">DESCUENTO:</label>
+                    <input type="text" class="form-control inputs3" id="" name="">
+                </div>
+                <div class="col-md-6">
+                    <label for="" class="form-label">SUB-TOTAL:</label>
+                    <input type="text" class="form-control inputs3" id="" name="">
+                </div>
+                <div class="col-md-6">
+                    <label for="" class="form-label">TOTAL:</label>
+                    <input type="text" class="form-control inputs3" id="" name="">
+                </div>
+                <div class="col-md-12">
+                    <label for="fecha3" class="form-label">FECHA DE REGISTRO:</label>
+                    <input type="text" class="form-control" id="fecha3" name="fecha3" readonly>
+                </div>
+                <div style="text-align: center">
+                    <div class="btn-group">
+                        <button class="btn btn-danger" type="button" id="limpiar3">CANCELAR</button>
+                        <button class="btn btn-success" type="submit">GUARDAR</button>
+                    </div>
+                </div>
+                <br>
+            </form>
+        </div>
+    </div>
 {% endblock %}

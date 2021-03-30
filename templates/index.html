@@ -1,8 +1,25 @@
 {% extends "layout.html" %}
 {% block title %} {{ title1 }} {% endblock %}
 {% block content %}
-    <br>
-    <h1 class="title is-1 fw-bold has-text-black">{{ titulo1 }}</h1>
-    <br>
-    <img id="img_cafe" src="{{ url_for('static', filename='img/cafe3.jpeg') }}" title="{{ title1 }}">
+    <h1 class="title is-1 fw-bold text-light" style="margin: 10px 0; background: #2d130e; padding: 10px 0">{{ titulo1 }}</h1>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <img class="img_cafe" src="{{ url_for('static', filename='img/fondo_cafe_1.jpg') }}" title="{{ title1 }}">
+        </div>
+        <div class="col-md-4">
+            <img class="img_cafe" src="{{ url_for('static', filename='img/fondo_cafe_2.jpg') }}" title="{{ title1 }}">
+        </div>
+        <div class="col-md-4">
+            <img class="img_cafe" src="{{ url_for('static', filename='img/fondo_cafe_3.jpg') }}" title="{{ title1 }}">
+        </div>
+        <div class="col-md-4">
+            <img class="img_cafe" src="{{ url_for('static', filename='img/fondo_cafe_4.jpg') }}" title="{{ title1 }}">
+        </div>
+        <div class="col-md-4">
+            <img class="img_cafe" src="{{ url_for('static', filename='img/fondo_cafe_5.jpg') }}" title="{{ title1 }}">
+        </div>
+        <div class="col-md-4">
+            <img class="img_cafe" src="{{ url_for('static', filename='img/fondo_cafe_6.jpg') }}" title="{{ title1 }}">
+        </div>
+    </div>
 {% endblock %}

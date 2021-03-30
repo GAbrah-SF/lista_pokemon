@@ -1,7 +1,9 @@
+let table, rows, valA, valB
+
 $(document).ready(function (){
     $('th').click(function() {
-        let table = $(this).parents('table').eq(0)
-        let rows = table.find('tr:gt(0)').toArray().sort(comparer($(this).index()))
+        table = $(this).parents('table').eq(0)
+        rows = table.find('tr:gt(0)').toArray().sort(comparer($(this).index()))
         this.asc = !this.asc
         if (!this.asc) {
             rows = rows.reverse()
@@ -14,8 +16,8 @@ $(document).ready(function (){
 
     function comparer(index) {
         return function(a, b) {
-            let valA = getCellValue(a, index),
-                valB = getCellValue(b, index)
+            valA = getCellValue(a, index)
+            valB = getCellValue(b, index)
             return $.isNumeric(valA) && $.isNumeric(valB) ? valA - valB : valA.localeCompare(valB)
         }
     }

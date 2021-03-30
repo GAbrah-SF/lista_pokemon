@@ -1,10 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends "layout.html" %}
+{% block title %} {{ title6 }} {% endblock %}
+{% block content %}
+    <br>
+    <h1 class="title is-1 fw-bold has-text-black">{{ titulo6 }}</h1>
+    <table class="table table-striped table-hover align-middle">
+        <thead>
+            <tr>
+                <tH scope="col">#</tH>
+                <th scope="col">NOMBRE</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for database in filaDB %}
+                <tr>
+                    <td class="fw-bold">{{ loop.index }}</td>
+                    <td class="fw-bold fs-5"><span class="DataBase">{{ database }}</span></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

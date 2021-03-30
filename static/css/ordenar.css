@@ -9,8 +9,8 @@ table tr th {
   background-color: #D4D4D4;
 }
 .asc:after {
-  content: ' ↑';
+  content: " ▲";
 }
 .desc:after {
-  content: " ↓";
+  content: " ▼";
 }
